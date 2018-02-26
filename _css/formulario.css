@@ -1,0 +1,19 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+label{
+    padding: 5px;
+}
+ul{
+    padding: 0px;
+}
+li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.container{
+    margin-top:-10px;
+    -webkit-app-region: drag;
+    height: 3.5em;
+}

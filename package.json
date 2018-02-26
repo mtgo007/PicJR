@@ -1,0 +1,24 @@
+{
+  "name": "metrica-rios-riachos",
+  "version": "1.5.0",
+  "description": "Programa para metricas de rios e riachos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "metrica",
+    "rio",
+    "riacho"
+  ],
+  "author": "Mathias Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.10",
+    "electron-db": "^0.7.1",
+    "fast-csv": "^2.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}

@@ -1,0 +1,51 @@
+#content { display: flex; }
+#content > div:nth-child(2) { flex: 1; }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.esq{
+    width: 50%;
+    height: 432px;
+    float:left;
+    border: 1px solid black;
+}
+.cen{
+    width: 10%;
+    height: 432px;
+    float: right;
+    border: 1px solid black;
+}
+.dir{
+    width: 30%;
+    float: right;
+    height: 432px;
+
+    border: 1px solid black;
+}
+input{
+    width: 60px;
+}
+.cen2{
+    width: 35%;
+    height: 520px;
+    border: 1px solid black;
+}
+.esq2{
+    width: 30%;
+    height:520px;
+    float:left;
+    border: 1px solid black;
+}
+.dir2{
+    width: 35%;
+    float: right;
+    height: 520px;;
+
+    border: 1px solid black;
+}
+.F{
+    margin: 5px auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+}
