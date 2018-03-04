@@ -38,7 +38,7 @@ cancela.addEventListener('click', ()=>{
 })
 
 function criaTabela(titulo){
-    db.createTable(elementos[0], (succ, msg) => {
+    db.createTable(titulo, (succ, msg) => {
         // succ - boolean, tells if the call is successful
         console.log("Success: " + succ);
         console.log("Message: " + msg);

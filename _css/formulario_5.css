@@ -10,7 +10,7 @@ body{
 select{
     width:300px;
     text-align-last:center;
-    margin-left: 550px;
+    margin-left: 350px;
 }
 img{
     display: block;
@@ -36,4 +36,19 @@ table, th {
     display: block;
     margin: 0;
     border: 3px solid black;
+}
+.cont{
+    width: 1000px;
+    margin: 0 auto;
+}
+.btn{
+    width: 1000px;
+    margin: 5px auto 5px;
+}
+#btn-c{
+    margin-top: 5px !important;
+}
+#btn-p{
+   margin-top: 5px;
+    margin-left: 80%;
 }

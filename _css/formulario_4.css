@@ -42,7 +42,7 @@ table, th, td {
     border: 1px solid black;
 }
 input{
-    width: 105px;
+    width: 70px;
 }
 textarea {
     display: block;
@@ -51,9 +51,13 @@ textarea {
     margin-top: 50px
 }
 #btnc{
-    margin: 25px;
+    margin: 5px;
 }
 #btnp{
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 80%;
+}
+.cont{
+    width: 1000px;
+    margin: 0 auto;
 }

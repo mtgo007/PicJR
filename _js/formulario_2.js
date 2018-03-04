@@ -108,18 +108,18 @@ var btc = document.getElementById("btn-c");
 
 btn.addEventListener('click', ()=>{
     if(count<=10){
-        nform.innerHTML = estado[count];
-        for(let i =0;i<67;i++){
-            let v = data[i];
-            for(let j =0;j<v.length;j++){
-                if(document.getElementById("i"+v[j]).value != ""){
-                    dados[i].push( document.getElementById("i"+v[j]).value);
-                    document.getElementById("i"+v[j]).value = "";
-                }
-            }
-        }
-        count++;
-        setEstado(count);
+        // nform.innerHTML = estado[count];
+        // for(let i =0;i<67;i++){
+        //     let v = data[i];
+        //     for(let j =0;j<v.length;j++){
+        //         if(document.getElementById("i"+v[j]).value != ""){
+        //             dados[i].push( document.getElementById("i"+v[j]).value);
+        //             document.getElementById("i"+v[j]).value = "";
+        //         }
+        //     }
+        // }
+        // count++;
+        // setEstado(count);
         
         main.openWindow('formulario_3', 1400, 900);
         var win = remote.getCurrentWindow();

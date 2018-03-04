@@ -1,51 +1,64 @@
-#content { display: flex; }
-#content > div:nth-child(2) { flex: 1; }
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.esq{
-    width: 50%;
-    height: 432px;
-    float:left;
+.container{
+    margin-top:-10px;
+    -webkit-app-region: drag;
+    height: 3.5em;
+}
+table{
+    border-collapse: collapse;
+}
+table, th{
     border: 1px solid black;
 }
-.cen{
-    width: 10%;
-    height: 432px;
-    float: right;
-    border: 1px solid black;
+.titulo .state{
+    margin-left: 80%;
 }
-.dir{
-    width: 30%;
-    float: right;
-    height: 432px;
-
-    border: 1px solid black;
+.titulo .tit{
+    margin:10px;
+    margin-left: 20px;
 }
-input{
-    width: 60px;
+.container{
+   width: 1000px;
+   margin: 0 auto;
 }
-.cen2{
-    width: 35%;
-    height: 520px;
-    border: 1px solid black;
+.container h4{
+    text-align: center;
 }
-.esq2{
-    width: 30%;
-    height:520px;
-    float:left;
-    border: 1px solid black;
+.info input{
+    width: 100px;
 }
-.dir2{
-    width: 35%;
-    float: right;
-    height: 520px;;
-
-    border: 1px solid black;
+.info table{
+    width: 100%;
+    
 }
-.F{
-    margin: 5px auto;
-    width: 50%;
-    border: 3px solid black;
-    padding: 10px;
+.algas table{
+    width: 1000px;
+    margin: 0 auto;
+}
+.algas input{
+    width:100px;
+}
+.estzn{
+    
+}
+.med table{
+    width:1000px;
+}
+.cobDoss table{
+    width: 1000px;
+}
+.Vzn table{
+    width: 1000px;
+}
+.btn{
+    width: 1000px;
+    margin: 0 auto 10px;
+}
+#btn-c{
+    margin: 5px 0;
+}
+#btn-p{
+    margin: 5px 0 5px 81%;
 }

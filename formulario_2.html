@@ -3,134 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./_css/w3.css">
-    <link rel="stylesheet" href="./_css/formulario.css">
     <link rel="stylesheet" href="./_css/formulario_2.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <title>Fórmulario de Rios/Riacho</title>
 </head>
 <body>
-    <div style="width: 100%">
-        <div class="container w3-blue" style="width: 90%; float:left" >
-                <h2 style="margin-left:5px;">Formulario Rios</h2>
+        <div style="width: 100%; display: table;">
+                <div style="display: table-row">
+                    <div style="width: 90%; display: table-cell;" class="container w3-blue select" > <h2 id="title">Formulario Rios</h2> </div>
+                    <div style="display: table-cell;" class="container w3-blue select" > <h2 id="nform">A-B</h2> </div>
+                </div>
         </div>
-        <div class="container w3-blue" style="width: 10%; float:right">
-                <h2 id="nform" style="margin-left:40px">A</h2>
+    <div class="container">
+        <div class="info">
+            <h4>INFORMAÇÕES DO SUBSTRATO DA SEÇÃO TRANSVERSAL</h4>
+            <table>
+                <tr>
+                    <th> </th>
+                    <th>Dist M. Esq</th>
+                    <th>Prof</th>
+                    <th>Codigo(Tam class)</th>
+                    <th>Imersão</th>
+                    <th>Tipo B/F</th>
+                    <th>OBS</th>
+                  </tr>
+                  <tr>
+                    <th>ESQ</th>
+                    <th><input id="0" type="number"></th>
+                    <th><input id="5" type="number"></th>
+                    <th><input id="10" type="number"></th>
+                    <th><input id="15" type="number"></th>
+                    <th><input id="20" type="number"></th>
+                    <th><input id="25" type="text"></th>
+                  </tr>
+                  <tr>
+                    <th>C.ESQ</th>
+                    <th><input id="1" type="number"></th>
+                    <th><input id="6" type="number"></th>
+                    <th><input id="11" type="number"></th>
+                    <th><input id="16" type="number"></th>
+                    <th><input id="21" type="number"></th>
+                    <th><input id="26" type="text"></th>
+                  </tr>
+                  <tr>
+                    <th>CENT</th>
+                    <th><input id="2" type="number"></th>
+                    <th><input id="7" type="number"></th>
+                    <th><input id="12" type="number"></th>
+                    <th><input id="17" type="number"></th>
+                    <th><input id="22" type="number"></th>
+                    <th><input id="27" type="text"></th>
+                  </tr>
+                  <tr>
+                    <th>C.DIR</th>
+                    <th><input id="3" type="number"></th>
+                    <th><input id="8" type="number"></th>
+                    <th><input id="13" type="number"></th>
+                    <th><input id="18" type="number"></th>
+                    <th><input id="23" type="number"></th>
+                    <th><input id="28" type="text"></th>
+                  </tr>
+                  <tr>
+                    <th>DIR</th>
+                    <th><input id="4" type="number"></th>
+                    <th><input id="9" type="number"></th>
+                    <th><input id="14" type="number"></th>
+                    <th><input id="19" type="number"></th>
+                    <th><input id="24" type="number"></th>
+                    <th><input id="29" type="text"></th>
+                  </tr>
+                </table>
         </div>
-        <br><br>
-    </div>
-        <div id="content">
-            <div class="esq">
-                    <table style="width:100%">
-                            <caption>INFORMAÇÕES DO SUBSTRATO DA SEÇÃO TRANSVERSAL</caption>
-                            <tr>
-                              <th> </th>
-                              <th>Dist M. Esq</th> 
-                              <th>Prof</th>
-                              <th>Codigo(Tam class)</th> 
-                              <th>Imersão</th>
-                              <th>Tipo B/F</th> 
-                              <th>OBS</th>
-                            </tr>
-                            <tr>
-                                <th>ESQ</th>
-                                <th><input id="i0" type="number"></th> 
-                                <th><input id="i1" type="number"></th>
-                                <th><input id="i2" type="number"></th> 
-                                <th><input id="i3" type="number"></th>
-                                <th><input id="i4" type="number"></th> 
-                                <th><input id="i5" type="text"></th>
-                            </tr>
-                            <tr>
-                                <th>C.ESQ</th>
-                                <th><input id="i6" type="number"></th> 
-                                <th><input id="i7" type="number"></th>
-                                <th><input id="i8" type="number"></th> 
-                                <th><input id="i9" type="number"></th>
-                                <th><input id="i10" type="number"></th> 
-                                <th><input id="i11" type="text"></th>
-                            </tr>
-                            <tr>
-                                    <th>CENT</th>
-                                    <th><input id="i12" type="number"></th> 
-                                    <th><input id="i13" type="number"></th>
-                                    <th><input id="i14" type="number"></th> 
-                                    <th><input id="i15" type="number"></th>
-                                    <th><input id="i16" type="number"></th> 
-                                    <th><input id="i17" type="text"></th>
-                            </tr>
-                            <tr>
-                                    <th>C.DIR</th>
-                                    <th><input id="i18" type="number"></th> 
-                                    <th><input id="i19" type="number"></th>
-                                    <th><input id="i20" type="number"></th> 
-                                    <th><input id="i21" type="number"></th>
-                                    <th><input id="i22" type="number"></th> 
-                                    <th><input id="i23" type="text"></th>
-                            </tr>
-                            <tr>
-                                    <th>DIR</th>
-                                    <th><input id="i24" type="number"></th> 
-                                    <th><input id="i25" type="number"></th>
-                                    <th><input id="i26" type="number"></th> 
-                                    <th><input id="i27" type="number"></th>
-                                    <th><input id="i28" type="number"></th> 
-                                    <th><input id="i29" type="text"></th>
-                            </tr>
-                          </table>
-            </div>
-            <div class="cen">
-                <table>
-                        <caption>ABRIGO PARA PEIXES/OUTROS</caption>
-                    <tr>
-                        <th>Algas Filamentosas</th>
-                        <th><select id="i30">
+        <div class="algas">
+            <h4>ABRIGO PARA PEIXES/OUTROS</h4>
+            <table>
+                <tr>
+                    <th>Algas Filamentosas</th>
+                    <th><select id="30">
+                            <option> </option>
+                            <option  >0</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option  >3</option>
+                            <option  >4</option>
+                          </select>
+                    </th>
+                    <th><input id="39" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Plantas Aquáticas</th>
+                        <th><select id="31">
                                 <option> </option>
                                 <option  >0</option>
-                                <option >1</option>
-                                <option >2</option>
+                                <option  >1</option>
+                                <option  >2</option>
                                 <option  >3</option>
                                 <option  >4</option>
                               </select>
                         </th>
-                    </tr>
-                    <tr>
-                            <th>Plantas Aquáticas</th>
-                            <th><select id="i31">
-                                    <option> </option>
-                                    <option  >0</option>
-                                    <option  >1</option>
-                                    <option  >2</option>
-                                    <option  >3</option>
-                                    <option  >4</option>
-                                  </select>
-                            </th>
-                    </tr>
-                    <tr>
-                            <th>Pedaços de Madeira >0.3m(Grande)</th>
-                            <th><select id="i32">
-                                    <option> </option>
-                                    <option  >0</option>
-                                    <option  >1</option>
-                                    <option  >2</option>
-                                    <option  >3</option>
-                                    <option  >4</option>
-                                  </select>
-                            </th>
-                    </tr>
-                    <tr>
-                            <th>Arvores Vivas ou Raizes</th>
-                            <th><select id="i33">
-                                    <option> </option>
-                                    <option >0</option>
-                                    <option >1</option>
-                                    <option >2</option>
-                                    <option >3</option>
-                                    <option >4</option>
-                                  </select>
-                            </th>
-                        </tr>
-                        <th>Pedaços de Madeira/Arbustos (PEQ.)</th>
-                        <th><select id="i119">
+                        <th><input id="40" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Pedaços de Madeira >0.3m(Grande)</th>
+                        <th><select id="32">
+                                <option> </option>
+                                <option  >0</option>
+                                <option  >1</option>
+                                <option  >2</option>
+                                <option  >3</option>
+                                <option  >4</option>
+                              </select>
+                        </th>
+                        <th><input id="41" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                <th>Arvores Vivas ou Raizes</th>
+                <th><select id="33">
+                        <option> </option>
+                        <option >0</option>
+                        <option >1</option>
+                        <option >2</option>
+                        <option >3</option>
+                        <option >4</option>
+                      </select>
+                </th>
+                <th><input id="42" type="text" placeholder="OBS"></th>
+                <tr>
+                <th>Pedaços de Madeira/Arbustos (PEQ.)</th>
+                <th><select id="119">
+                    <option> </option>
+                    <option >0</option>
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                  </select>
+                </th>
+                <th><input id="43" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Banco de Folhas</th>
+                        <th><select id="34">
                                 <option> </option>
                                 <option >0</option>
                                 <option >1</option>
@@ -139,562 +152,542 @@
                                 <option >4</option>
                               </select>
                         </th>
-                            <tr>
-                                    <th>Banco de Folhas</th>
-                                    <th><select id="i34">
-                                            <option> </option>
-                                            <option >0</option>
-                                            <option >1</option>
-                                            <option >2</option>
-                                            <option >3</option>
-                                            <option >4</option>
-                                          </select>
-                                    </th>
-                            </tr>
-                            <tr>
-                                    <th>Vegetação Perdurada =<1m da superfície</th>
-                                    <th><select id="i35">
-                                            <option> </option>
-                                            <option >0</option>
-                                            <option >1</option>
-                                            <option >2</option>
-                                            <option>3</option>
-                                            <option >4</option>
-                                          </select>
-                                    </th>
-                            </tr>
-                            
-                            <tr>
-                                    <th>Margem Escavada</th>
-                                    <th><select id="i36">
-                                            <option> </option>
-                                            <option >0</option>
-                                            <option >1</option>
-                                            <option >2</option>
-                                            <option >3</option>
-                                            <option >4</option>
-                                          </select>
-                                    </th>
-                            </tr>
-                            <tr>
-                                    <th>Matacão</th>
-                                    <th><select id="i37">
-                                            <option> </option>
-                                            <option >0</option>
-                                            <option >1</option>
-                                            <option >2</option>
-                                            <option >3</option>
-                                            <option >4</option>
-                                          </select>
-                                    </th>
-                            </tr>
-                            <tr>
-                                    <th>Estruturas Artificias</th>
-                                    <th><select id="i38">
-                                            <option> </option>
-                                            <option >0</option>
-                                            <option >1</option>
-                                            <option >2</option>
-                                            <option >3</option>
-                                            <option >4</option>
-                                          </select>
-                                    </th>
-                            </tr>
-                            <tr>
-                            </tr>
-                </table>
-            </div>
-            <div class="dir">
-                    <table style="width:100%">
-                            <caption>ESTIMATIVAS VISUAIS DA ZONA RIPÁRIA</caption>
-                            <tr>
-                                    <th>COBERTURA VEG. DA ZONA RIPÁRIA</th>
-                                    <th>MARGEM ESQUERDA</th>
-                                    <th>MARGEM DIREITA</th>
-                                    <th>OBS.</th>
-                            </tr>
-                            
-                                    <tr>
-                                        <th>Árvores Grandes(DAP >0.3m)</th>
-                                        <th><select id="i39">
-                                                <option>0</option>
-                                                <option >1</option>
-                                                <option >2</option>
-                                                <option>3</option>
-                                                <option >4</option>
-                                        </select></th>
-                                        <th>
-                                                <select id="i40">
-                                                        <option>0</option>
-                                                        <option >1</option>
-                                                        <option >2</option>
-                                                        <option >3</option>
-                                                        <option >4</option>
-                                                </select>
-                                        </th>
-                                        <th>
-                                                <input id="i41" text placeholder="Dossel">
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                        Árvores PEQUENAS (DAP <0.3m)
-                                        </th>
-                                        <th>
-                                             <select id="i42">
-                                                        <option >0</option>
-                                                        <option >1</option>
-                                                        <option >2</option>
-                                                        <option >3</option>
-                                                        <option >4</option>
-                                                </select>   
-                                        </th>
-                                        <th>
-                                                <select id="i43">
-                                                        <option >0</option>
-                                                        <option >1</option>
-                                                        <option>2</option>
-                                                        <option >3</option>
-                                                        <option >4</option>
-                                                </select>
-                                        </th>
-                                        <th>
-                                        <input id="i44" type="text" placeholder="Dossel">
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                        Arbustos Lenhosos & Mudas
-                                        </th>
-                                        <th>
-                                             <select id="i45">
-                                                        <option >0</option>
-                                                        <option >1</option>
-                                                        <option >2</option>
-                                                        <option >3</option>
-                                                        <option >4</option>
-                                                </select>   
-                                        </th>
-                                        <th>
-                                                <select id="i46">
-                                                        <option >0</option>
-                                                        <option >1</option>
-                                                        <option>2</option>
-                                                        <option >3</option>
-                                                        <option >4</option>
-                                                </select>
-                                        </th>
-                                        <th>
-                                        <input id="i47" type="text" placeholder="Sub-Bosque">
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                                <th>
-                                                Erva sem Tronco Lenhoso & Gramíneas
-                                                </th>
-                                                <th>
-                                                     <select id="i48">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option >2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>   
-                                                </th>
-                                                <th>
-                                                        <select id="i49">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option>2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>
-                                                </th>
-                                                <th>
-                                                <input id="i50" type="text" placeholder="Sub-Bosque">
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                 Arbustos Lenhosos & Mudas                                                
-                                                </th>
-                                                <th>
-                                                     <select id="i51">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option >2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>   
-                                                </th>
-                                                <th>
-                                                        <select id="i52">
-                                                                <option value="0">0</option>
-                                                                <option  value="5">1</option>
-                                                                <option value="25">2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>
-                                                </th>
-                                                <th>
-                                                <input id="i53" type="text" placeholder="Veg Rasteira">
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                   Erva sem Tronco Lenhoso & Gramíneas
-                                                </th>
-                                                <th>
-                                                     <select id="i54">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option >2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>   
-                                                </th>
-                                                <th>
-                                                        <select id="i55">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option>2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>
-                                                </th>
-                                                <th>
-                                                <input id="i56" type="text" placeholder="Veg Rasteira">
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th>
-                                                   Solo sem Cobertura Vegetal ou Serrapilheira
-                                                </th>
-                                                <th>
-                                                     <select id="i57">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option >2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>   
-                                                </th>
-                                                <th>
-                                                        <select id="i58">
-                                                                <option >0</option>
-                                                                <option >1</option>
-                                                                <option>2</option>
-                                                                <option >3</option>
-                                                                <option >4</option>
-                                                        </select>
-                                                </th>
-                                                <th>
-                                                <input id="i59" type="text" placeholder="Veg Rasteira">
-                                                </th>
-                                            </tr>
-                                            
-                                    
+                        <th><input id="44" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Vegetação Perdurada =<1m da superfície</th>
+                        <th><select id="35">
+                                <option> </option>
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option>3</option>
+                                <option >4</option>
+                              </select>
+                        </th>
+                        <th><input id="45" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Margem Escavada</th>
+                        <th><select id="36">
+                                <option> </option>
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                              </select>
+                        </th>
+                        <th><input id="46" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Matacão</th>
+                        <th><select id="37">
+                                <option> </option>
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                              </select>
+                        </th>
+                        <th><input id="47" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                        <th>Estruturas Artificias</th>
+                        <th><select id="38">
+                                <option> </option>
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                              </select>
+                        </th>
+                        <th><input id="48" type="text" placeholder="OBS"></th>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+        <div class="estzn">
+        <h4>ESTIMATIVAS VISUAIS DA ZONA RIPÁRIA</h4>
+        <table style="width:100%">
+            
+            <tr>
+                    <th>COBERTURA VEG. DA ZONA RIPÁRIA</th>
+                    <th>MARGEM ESQUERDA</th>
+                    <th>MARGEM DIREITA</th>
+                    <th>OBS.</th>
+            </tr>
+            <tr>
+                <th>Árvores Grandes(DAP >0.3m)</th>
+                <th><select id="49">//
+                        <option>0</option>
+                        <option >1</option>
+                        <option >2</option>
+                        <option>3</option>
+                        <option >4</option>
+                </select></th>
+                <th>
+                        <select id="56">
+                                <option>0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <input id="63" text placeholder="Dossel">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                Árvores PEQUENAS (DAP <0.3m)
+                </th>
+                <th>
+                     <select id="50">
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <select id="57">
+                                <option >0</option>
+                                <option >1</option>
+                                <option>2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                <input id="64" type="text" placeholder="Dossel">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                Arbustos Lenhosos & Mudas
+                </th>
+                <th>
+                     <select id="51">
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <select id="58">
+                                <option >0</option>
+                                <option >1</option>
+                                <option>2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                <input id="65" type="text" placeholder="Sub-Bosque">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                Erva sem Tronco Lenhoso & Gramíneas
+                </th>
+                <th>
+                     <select id="52">
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <select id="59">
+                                <option >0</option>
+                                <option >1</option>
+                                <option>2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                <input id="66" type="text" placeholder="Sub-Bosque">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                 Arbustos Lenhosos & Mudas
+                </th>
+                <th>
+                     <select id="53">
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <select id="60">
+                                <option value="0">0</option>
+                                <option  value="5">1</option>
+                                <option value="25">2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                <input id="67" type="text" placeholder="Veg Rasteira">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                   Erva sem Tronco Lenhoso & Gramíneas
+                </th>
+                <th>
+                     <select id="54">
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <select id="61">
+                                <option >0</option>
+                                <option >1</option>
+                                <option>2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                <input id="68" type="text" placeholder="Veg Rasteira">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                   Solo sem Cobertura Vegetal ou Serrapilheira
+                </th>
+                <th>
+                     <select id="55">
+                                <option >0</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                        <select id="62">
+                                <option >0</option>
+                                <option >1</option>
+                                <option>2</option>
+                                <option >3</option>
+                                <option >4</option>
+                        </select>
+                </th>
+                <th>
+                <input id="69" type="text" placeholder="Veg Rasteira">
+                </th>
+            </tr>
                     </table>
-            </div>
         </div>
-        <div id="content">
-                <div class="esq2">
-                        <p style="text-align:center">MEDIDAS DA MARGEM</p>
-                        <table style="width:50%;float:left">
-                                <caption style="font-weight:700">Ângulo da Margem</caption>
-                                <tr>
-                                        <th>Esquerda</th>
-                                        <th><input id="i60" type="number" placeholder="0-360"></th>
-                                </tr>
-                                <tr>
-                                        <th>Direita</th>
-                                        <th><input id="i61" type="number" placeholder="0-360"></th>
-                                </tr>
-                                <tr>
-                                        <th>Largura Molhada</th>
-                                        <th>XXX.Xm</th>
-                                </tr>
-                                <tr>
-                                        <th>Largura da Barras de Canal</th>
-                                        <th>XX.X m</th>
-                                </tr>
-                                <tr>
-                                        <th>Largura do Leito Sazonal</th>
-                                        <th>XXX.Xm</th>
-                                </tr>
-                                <tr>
-                                        <th>Altura do Leito Sazonal</th>
-                                        <th>XX.X m</th>
-                                </tr>
-                                <tr>
-                                        <th>Altura da Incisão</th>
-                                        <th>XX.X m</th>
-                                </tr>
-                        </table>
-                        <table style="width:50%;float:right">
-                                <caption style="font-weight:700">Margem Escavada</caption>
-                                <tr>
-                                        <th><input id="i62" type="number" placeholder="(m)"></th>
-                                        <th><input id="i63"  placeholder="Obs"></th>
-                                </tr>
-                                <tr>
-                                        <th><input id="i64" type="number" placeholder="(m)" ></th>
-                                        <th><input id="i65"  placeholder="Obs"></th>
-                                </tr>
-                                <tr>
-                                        <th><input id="i66" type="number" placeholder="(m)"></th>
-                                        <th><input id="i67"  placeholder="Obs"></th>
-                                </tr>
-                                <tr>
-                                        <th><input id="i68" type="number" placeholder="(m)"style="margin-top:5px;"></th>
-                                        <th><input id="i69"  placeholder="Obs"style="margin-top:5px;"></th>
-                                </tr>
-                                <tr>
-                                        <th><input id="i70" type="number" placeholder="(m)" style="margin-top:15px;"></th>
-                                        <th><input id="i71" placeholder="Obs" style="margin-top:15px;"></th>
-                                </tr>
-                                <tr>
-                                        <th><input id="i72" type="number" placeholder="(m)"style="margin-top:15px;"></th>
-                                        <th><input id="i73"  placeholder="Obs"style="margin-top:15px;"></th>
-                                </tr>
-                                <tr>
-                                        <th><input id="i74" type="number" placeholder="(m)"></th>
-                                        <th><input id="i75"  placeholder="Obs"></th>
-                                </tr>
-                        </table>
-                </div>
-                <div class="cen2">
-                        <p style="text-align:center">MEDIDAS DA COBERTURA DO DOSSEL</p>
-                        <table style="width:100%">
-                                <caption style="font-weight:700">DENSIOMETRO (0-17 Max)</caption>
-                                <tr>
-                                        <th>Centro a Montante</th>
-                                        <th><input id="i76" type="number"></th>
-                                        <th><input id="i77"  placeholder="Obs"></th>
-                                        <th>Centro a Direita</th>
-                                        <th><input id="i120" type="number"></th>
-                                        <th><input id="i121"  placeholder="Obs"></th>
-                                </tr>
-                                <tr>
-                                        <th>Centro a Esquerda</th>
-                                        <th><input id="i78" type="number"></th>
-                                        <th><input id="i79"  placeholder="Obs"></th>
-                                        <th>Esquerda</th>
-                                        <th><input id="i80" type="number"></th>
-                                        <th><input id="i81"  placeholder="Obs"></th>
-                                </tr>
-                                <tr>
-                                        <th>Centro a Jusante</th>
-                                        <th><input id="i82" type="number"></th>
-                                        <th><input id="i83"  placeholder="Obs"></th>
-                                        <th>Direita</th>
-                                        <th><input id="i84" type="number"></th>
-                                        <th><input id="i85"  placeholder="Obs"></th>
-                                </tr>
-                        </table>
-                        <table class="F">
-                                <caption>Cód. Tam. Class F</caption>
-                                <tr>
-                                        <th>(Marcar Apenas se o Transecto for 100% Biológico)</th>
-                                </tr>
-                                <tr>
-                                        <th><input type="checkbox" id="i122"></th> 
-                                </tr>
-                        </table>
-                </div>
-                <div class="dir2">
-                        <p style="text-align:center">INFLUÊNCIA HUMANA</p>
-                        <table style="width:100%">
-                                <tr>
-                                        <th> </th>
-                                        <th>Margem Esquerda</th>
-                                        <th>Margem Direita</th>
-                                        <th>Obs</th>
-                                </tr>
-                                <tr>
-                                        <th>Muro, dique, Canalização, gabião, barramento</th>
-                                        <th><select id="i86">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i87">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i88"></th>
-                                </tr>
-                                <tr>
-                                        <th>Construções</th>
-                                        <th><select id="i89">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i90">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i91"></th>
-                                </tr>
-                                <tr>
-                                        <th>Estrada Calçada ou Cascalhada</th>
-                                        <th><select id="i92">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i93">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i94"></th>
-                                </tr>
-                                <tr>
-                                        <th>Rodovia/Ferrovia</th>
-                                        <th><select id="i95">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i96">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i97"></th>
-                                </tr>
-                                <tr>
-                                        <th>Canos (Captação/Descarga)</th>
-                                        <th><select id="i98">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i99">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i100"></th>
-                                </tr>
-                                <tr>
-                                        <th>Entulho/Lixo</th>
-                                        <th><select id="i101">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i102">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i103"></th>
-                                </tr>
-                                <tr>
-                                        <th>Parque/Gramado</th>
-                                        <th><select id="i104">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i105">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i106"></th>
-                                </tr>
-                                <tr>
-                                        <th>Plantações de Grãos</th>
-                                        <th><select id="i107">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i108">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i109"></th>
-                                </tr>
-                                <tr>
-                                        <th>Pastagem/Campo de Feno</th>
-                                        <th><select id="i110">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i111">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i112"></th>
-                                </tr>
-                                <tr>
-                                        <th>Silvicultura/ Desmatamento</th>
-                                        <th><select id="i113">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i114">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i115"></th>
-                                </tr>
-                                <tr>
-                                        <th>Mineração</th>
-                                        <th><select id="i116">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><select id="i117">
-                                                <option>0</option>
-                                                <option>P</option>
-                                                <option>C</option>
-                                                <option>B</option>
-                                        </select></th>
-                                        <th><input id="i118"></th>
-                                </tr>
-                        </table>
-                </div>
-                
+        <div class="med">
+            <h4>MEDIDAS DA MARGEM</h4>
+            <table>
+                <tr>
+                    <th colspan="2">Ângulo da margem</th>
+                    <th colspan="2">Margem escavada</th>
+                </tr>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>0 - 360</th>
+                    <th>Dist. (m)</th>
+                    <th>Obs.</th>
+                </tr>
+                <tr>
+                    <th>Esquerda</th>
+                    <th><input id="70" type="number"></th>
+                    <th><input id="72" type="number"></th>
+                    <th><input id="79" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Direita</th>
+                    <th><input id="71" type="number"></th>
+                    <th><input id="73" type="number"></th>
+                    <th><input id="80" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Largura molhada</th>
+                    <th>XXX.X m</th>
+                    <th><input id="74" type="number"></th>
+                    <th><input id="81" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Largura das barras de canal</th>
+                    <th>XX.X m</th>
+                    <th><input id="75" type="number"></th>
+                    <th><input id="82" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Largura do leito sazonal</th>
+                    <th>XXX.X m</th>
+                    <th><input id="76" type="number"></th>
+                    <th><input id="83" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Altura do leito sazonal</th>
+                    <th>XX.X m</th>
+                    <th><input id="77" type="number"></th>
+                    <th><input id="84" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Altura da incisão</th>
+                    <th>XX.X m</th>
+                    <th><input id="78" type="number"></th>
+                    <th><input id="85" type="text"></th>
+                </tr>
+            </table>
         </div>
-        <div style="width:100%">
-                <button id="btn-c" class="w3-button w3-gray" style="margin:10px"> Cancelar</button>
-                <button id="btn-p" class="w3-button w3-blue" style="margin:5px 5px 5px 1150px">Próximo</button>
+        <div class="cobDoss">
+            <h4>MEDIDAS DA COBERTURA DO DOSSEL</h4>
+            <table>
+                <caption>DENSIÔMETRO (0-17Max)</caption>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>OBS</th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                    <th>OBS</th>
+                </tr>
+                <tr>
+                    <th>Centro a montante</th>
+                    <th><input id="86" type="number"></th>
+                    <th><input id="89" type="text"></th>
+                    <th>Centro a direita</th>
+                    <th><input id="92" type="number"></th>
+                    <th><input id="95" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Centro a esquerda</th>
+                    <th><input id="87" type="number"></th>
+                    <th><input id="90" type="text"></th>
+                    <th>Esquerda</th>
+                    <th><input id="93" type="number"></th>
+                    <th><input id="96" type="text"></th>
+                </tr>
+                <tr>
+                    <th>Centro a jusante</th>
+                    <th><input id="88" type="number"></th>
+                    <th><input id="91" type="text"></th>
+                    <th>Direita</th>
+                    <th><input id="94" type="number"></th>
+                    <th><input id="97" type="text"></th>
+                </tr>
+            </table>
         </div>
+        <div class="Vzn">
+        <h4>INFLUÊNCIA HUMANA</h4>
+            <table>
+                <tr>
+                        <th> </th>
+                        <th>Margem Esquerda</th>
+                        <th>Margem Direita</th>
+                        <th>Obs</th>
+                </tr>
+                <tr>
+                        <th>Muro, dique, Canalização, gabião, barramento</th>
+                        <th><select id="98">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="109">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="120"></th>
+                </tr>
+                <tr>
+                        <th>Construções</th>
+                        <th><select id="99">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="110">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="121"></th>
+                </tr>
+                <tr>
+                        <th>Estrada Calçada ou Cascalhada</th>
+                        <th><select id="100">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="111">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="122"></th>
+                </tr>
+                <tr>
+                        <th>Rodovia/Ferrovia</th>
+                        <th><select id="101">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="112">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="123"></th>
+                </tr>
+                <tr>
+                        <th>Canos (Captação/Descarga)</th>
+                        <th><select id="102">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="113">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="124"></th>
+                </tr>
+                <tr>
+                        <th>Entulho/Lixo</th>
+                        <th><select id="103">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="114">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="125"></th>
+                </tr>
+                <tr>
+                        <th>Parque/Gramado</th>
+                        <th><select id="104">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="115">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="126"></th>
+                </tr>
+                <tr>
+                        <th>Plantações de Grãos</th>
+                        <th><select id="105">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="116">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="127"></th>
+                </tr>
+                <tr>
+                        <th>Pastagem/Campo de Feno</th>
+                        <th><select id="106">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="117">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="128"></th>
+                </tr>
+                <tr>
+                        <th>Silvicultura/ Desmatamento</th>
+                        <th><select id="107">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="118">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="129"></th>
+                </tr>
+                <tr>
+                        <th>Mineração</th>
+                        <th><select id="108">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><select id="119">
+                                <option>0</option>
+                                <option>P</option>
+                                <option>C</option>
+                                <option>B</option>
+                        </select></th>
+                        <th><input id="130"></th>
+                </tr>
+            </table>
+        </div>
+        <div class="btn">
+                <button id="btn-c" class="w3-button w3-gray"> Cancelar</button>
+                <button id="btn-p" class="w3-button w3-blue" >Próximo</button>
+        </div>
+    </div>
+            
         <script type="text/javascript" src="./_js/formulario_2.js"></script>
 </body>
 </html>
