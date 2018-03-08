@@ -1,5 +1,7 @@
 let selImg = document.getElementById('selimg');
 let img = document.getElementById('img');
+let btn = document.getElementById("btn-p");
+let data = {};
 
 selImg.addEventListener('change', ()=>{
     let val = selImg.value;
@@ -24,4 +26,15 @@ selImg.addEventListener('change', ()=>{
     if(val == "Vale não perceptível"){
         img.src = "./_img/Rios/NaoPerceptivel.jpg";
     }
+});
+
+btn.addEventListener('click', ()=>{
+    data['chPad'] = document.getElementById(0).value;
+    data['encaixamentoCH'] = selImg.value;
+    data['caracEncaixamento'] = document.getElementById(1).value;
+    data['porcentagemCH'] = document.getElementById(2).value;
+    data['larSaz'] = document.getElementById(3).value;
+    data['largVale'] = document.getElementById(4).value;
+    data['bordasVale'] = document.getElementById(5).checked;
+    console.log(data);
 });
