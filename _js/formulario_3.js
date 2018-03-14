@@ -86,7 +86,7 @@ btnp.addEventListener('click', function(){
     }
     else if(count<10){
         //get dados
-        
+        data['dadosTransecto']['profTalvegue']  = data['dadosTransecto']['profTalvegue'].concat(geraArr(0,14));
         
         // count++;
         // alteraEstado(count);
