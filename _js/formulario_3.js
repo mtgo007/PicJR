@@ -12,6 +12,7 @@ var btnp = document.getElementById("btn-p");
 var nfomr = document.getElementById("nform");
 let title;
 
+//Estrutura dos dados
 let data ={
     perfilLongitudinal : [],
     dadosTransecto : {
@@ -63,7 +64,7 @@ btnp.addEventListener('click', function(){
         data['dadosTransecto']['canalLateral'] = geraArr(79,93);
         data['dadosTransecto']['backWater'] = geraArr(94,108);
         data['dadosTransecto']['Comentarios'] = geraArr(109,123);
-        //transecto 7 
+        //transecto 7
         data['transecto']['esq'].push(document.getElementById(124).value);
         data['transecto']['cEsq'].push(document.getElementById(125).value);
         data['transecto']['cent'].push(document.getElementById(126).value);
@@ -87,9 +88,36 @@ btnp.addEventListener('click', function(){
     else if(count<10){
         //get dados
         data['dadosTransecto']['profTalvegue']  = data['dadosTransecto']['profTalvegue'].concat(geraArr(0,14));
-        
-        // count++;
-        // alteraEstado(count);
+        data['dadosTransecto']['largMolhada'] = data['dadosTransecto']['largMolhada'].concat(geraArr(15,16));
+        data['dadosTransecto']['largBarraCanalP'] = data['dadosTransecto']['largBarraCanalP'].concat(geraArr(17,31));
+        data['dadosTransecto']['largBarraCanalX'] = data['dadosTransecto']['largBarraCanalX'].concat(geraArr(32,33));
+        data['dadosTransecto']['sedimentoPeq'] = data['dadosTransecto']['sedimentoPeq'].concat(geraArr(34,48));
+        data['dadosTransecto']['codUnidadeCanal'] = data['dadosTransecto']['codUnidadeCanal'].concat(geraArr(49,63));
+        data['dadosTransecto']['codFormaPiscina'] = data['dadosTransecto']['codFormaPiscina'].concat(geraArr(64,78));
+        data['dadosTransecto']['canalLateral'] = data['dadosTransecto']['canalLateral'].concat(geraArr(79,93));
+        data['dadosTransecto']['backWater'] = data['dadosTransecto']['backWater'].concat(geraArr(94,108));
+        data['dadosTransecto']['Comentarios'] = data['dadosTransecto']['Comentarios'].concat(geraArr(109,123));
+
+        data['transecto']['esq'].push(document.getElementById(124).value);
+        data['transecto']['cEsq'].push(document.getElementById(125).value);
+        data['transecto']['cent'].push(document.getElementById(126).value);
+        data['transecto']['cDir'].push(document.getElementById(127).value);
+        data['transecto']['dir'].push(document.getElementById(128).value);
+        data['transecto']['obs'].push(document.getElementById(129).value);
+
+        //madeiras
+        data['madeiras']['DentroLeitoSaz']['1'] = data['madeiras']['DentroLeitoSaz']['1'].concat(geraArr(130,133));
+        data['madeiras']['DentroLeitoSaz']['5'] = data['madeiras']['DentroLeitoSaz']['5'].concat(geraArr(134,137));
+        data['madeiras']['DentroLeitoSaz']['15'] = data['madeiras']['DentroLeitoSaz']['15'].concat(geraArr(138,141));
+        //madeiras fora
+        data['madeiras']['AcimaLeitoSaz']['1'] = data['madeiras']['AcimaLeitoSaz']['1'].concat(geraArr(142,145));
+        data['madeiras']['AcimaLeitoSaz']['5'] = data['madeiras']['AcimaLeitoSaz']['5'].concat(geraArr(146,149));
+        data['madeiras']['AcimaLeitoSaz']['15'] = data['madeiras']['AcimaLeitoSaz']['15'].concat(geraArr(150,153));
+
+
+
+        count++;
+        alteraEstado(count);
     }else{
         // salvaDados(title, dados);
         // main.openWindow('formulario_4', 1400, 900);
